@@ -2,12 +2,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem;
   background-color: var(--color-bg-dark);
   border-bottom: 1px solid var(--color-grey);
 }
+
+.toggle {
+  background-color: transparent;
+  color: var(--color-text);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 150ms ease-out;
+}
+
+.toggle:hover {
+  transform: scale(1.1);
+  color: var(--color-accent);
+}
+
 .filters {
   display: flex;
 }
+
 .filter {
   font-size: 1.4rem;
   margin: 0.3rem;
@@ -22,6 +38,7 @@
 .filter.selected {
   opacity: 1;
 }
+
 .filter.selected::after {
   content: "";
   display: block;
