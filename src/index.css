@@ -4,6 +4,7 @@
   --color-grey: #d1d1d1;
   --color-text: #22243b;
   --color-accent: #f16e03;
+  --color-white: white;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
     rgba(81, 87, 111, 1) 0%,
     rgba(60, 61, 69, 1) 100%
   );
+  font-size: 1.2rem;
 }
 #root {
   overflow: hidden;
@@ -41,6 +43,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 ul {
